@@ -22,6 +22,11 @@ namespace MessageWallHomework
         {
             messageDisplay.DataSource = messages;
         }
+        private void FullName()
+        {
+            string fullName = firstNameText.Text + " " + lastNameText.Text;
+            messages.Add(fullName);
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -45,15 +50,16 @@ namespace MessageWallHomework
 
         private void addMessage_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(messageDisplay.Text))
+            if (string.IsNullOrWhiteSpace(firstNameText.Text) || string.IsNullOrWhiteSpace(lastNameText.Text))
             {
                 MessageBox.Show("Pleas enter a message before adding to the list.",
                     "Blank Message Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                messages.Add(messageDisplay.Text);
-                messageDisplay.Text = "";
+                FullName();
+                firstNameText.Text = "";
+                lastNameText.Text = "";
             }
             messageDisplay.Focus();
 

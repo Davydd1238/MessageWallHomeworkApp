@@ -43,15 +43,15 @@
             this.firstNameLabel.Location = new System.Drawing.Point(25, 61);
             this.firstNameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(158, 36);
+            this.firstNameLabel.Size = new System.Drawing.Size(193, 40);
             this.firstNameLabel.TabIndex = 0;
             this.firstNameLabel.Text = "First Name";
             // 
             // firstNameText
             // 
-            this.firstNameText.Location = new System.Drawing.Point(192, 58);
+            this.firstNameText.Location = new System.Drawing.Point(216, 53);
             this.firstNameText.Name = "firstNameText";
-            this.firstNameText.Size = new System.Drawing.Size(226, 41);
+            this.firstNameText.Size = new System.Drawing.Size(226, 48);
             this.firstNameText.TabIndex = 1;
             this.firstNameText.TextChanged += new System.EventHandler(this.firstNameText_TextChanged);
             // 
@@ -59,7 +59,7 @@
             // 
             this.lastNameText.Location = new System.Drawing.Point(651, 60);
             this.lastNameText.Name = "lastNameText";
-            this.lastNameText.Size = new System.Drawing.Size(204, 41);
+            this.lastNameText.Size = new System.Drawing.Size(204, 48);
             this.lastNameText.TabIndex = 2;
             this.lastNameText.TextChanged += new System.EventHandler(this.lastNameText_TextChanged);
             // 
@@ -68,7 +68,7 @@
             this.lastNameLabel.AutoSize = true;
             this.lastNameLabel.Location = new System.Drawing.Point(489, 63);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(156, 36);
+            this.lastNameLabel.Size = new System.Drawing.Size(191, 40);
             this.lastNameLabel.TabIndex = 3;
             this.lastNameLabel.Text = "Last Name";
             // 
@@ -85,7 +85,7 @@
             // messageDisplay
             // 
             this.messageDisplay.FormattingEnabled = true;
-            this.messageDisplay.ItemHeight = 36;
+            this.messageDisplay.ItemHeight = 40;
             this.messageDisplay.Location = new System.Drawing.Point(31, 148);
             this.messageDisplay.Name = "messageDisplay";
             this.messageDisplay.Size = new System.Drawing.Size(824, 364);
@@ -97,14 +97,14 @@
             this.messagesDisplayBox.AutoSize = true;
             this.messagesDisplayBox.Location = new System.Drawing.Point(25, 109);
             this.messagesDisplayBox.Name = "messagesDisplayBox";
-            this.messagesDisplayBox.Size = new System.Drawing.Size(150, 36);
+            this.messagesDisplayBox.Size = new System.Drawing.Size(181, 40);
             this.messagesDisplayBox.TabIndex = 6;
             this.messagesDisplayBox.Text = "Messages";
             this.messagesDisplayBox.Click += new System.EventHandler(this.label1_Click);
             // 
             // MessageWall
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(21F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 653);
             this.Controls.Add(this.messagesDisplayBox);
